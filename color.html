@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="color.css">
+    <title>Random color thing that should be private</title>
+</head>
+
+<body>
+    <h1>Color changer</h1>
+    <p>this page will change color randomly</p>
+    <script>
+        var changeColorOnce = function () {
+            var r = Math.floor(Math.random() * 256);
+            var g = Math.floor(Math.random() * 256);
+            var b = Math.floor(Math.random() * 256);
+            document.body.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
+        };
+        setInterval(changeColorOnce, 1000);
+
+    </script>
+
+</body>
+
+</html>
